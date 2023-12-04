@@ -1,11 +1,16 @@
-import { useState } from "react";
 import React from "react";
 import "./App.css";
+import { Routes, Route } from "react-router-dom";
+import Form from "./components/Form";
+import Hero from "./components/Hero";
 
 function App() {
   return (
     <>
-      <h1>Welcome to File Uploader</h1>
+      <Routes>
+        <Route path="/" element={<Hero />} />
+        <Route path="/products" element={<Form />} />
+      </Routes>
     </>
   );
 }
