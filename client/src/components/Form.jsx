@@ -2,6 +2,7 @@ import { useForm } from "react-hook-form";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import axios from "axios";
+import GoBack from "./Return/GoBack";
 
 const Form = () => {
   const { register, handleSubmit } = useForm({
@@ -83,6 +84,7 @@ const Form = () => {
           theme="dark"
         />
       </form>
+      <GoBack />
     </>
   );
 };
